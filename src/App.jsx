@@ -94,18 +94,25 @@ export default function App() {
 
   return (
     <div className="page">
-      {celebrate && (
-        <div className="confetti">
-          {Array.from({ length: 50 }).map((_, i) => (
-            <span
-              key={i}
-              className={i % 2 === 0 ? "confetti-piece" : "confetti-star"}
-            />
-          ))}
-        </div>
-      )}
+    {celebrate && (
+  <div className="confetti">
+    {Array.from({ length: 50 }).map((_, i) => (
+      <span
+        key={i}
+        className={i % 2 === 0 ? "confetti-piece" : "confetti-star"}
+        style={{
+          left: `${Math.random() * 100}%`,
+          animationDelay: `${Math.random() * 0.6}s`,
+          transform: `rotate(${Math.random() * 360}deg)`
+        }}
+      />
+    ))}
+  </div>
+)}
+
 
       <h3>Match the Number on the Abacus</h3>
+      {/* <p>Testing</p> */}
       <div className="target">{target}</div>
 
       <div className={`abacus-box ${currentValue === target ? "matched" : ""}`}>

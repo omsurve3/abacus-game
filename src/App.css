@@ -50,8 +50,8 @@ body {
 /* Rods container */
 .rods {
   display: flex;
-  justify-content: space-between;
-  gap: 64px; /* MORE HORIZONTAL SPACE */
+  justify-content: space-evenly;
+  gap: 14px; /* MORE HORIZONTAL SPACE */
 }
 
 /* Rod */
@@ -124,7 +124,7 @@ body {
   
   height: 22px;
   background: #8b4513;
-  margin: 18px 10px 14px  ; /* MORE VERTICAL SPACE */
+  margin: 0px  ; /* MORE VERTICAL SPACE */
   border-radius: 12px;
   padding-bottom: 30px;
   
@@ -369,7 +369,7 @@ body {
   top: 0;
   left: 50%;
   width: 6px;
-  height: 200px;
+  height: 260px;
   background: #8b4513;
   border-radius: 3px;
   transform: translateX(-50%);
@@ -411,7 +411,7 @@ body {
 
 .label {
   position: absolute;
-  bottom: -44px;
+  bottom: -24px;
   width: 100%;
   font-size: 14px;
   font-weight: bold;
@@ -424,6 +424,7 @@ body {
   margin: 18px 10px 14px;
   border-radius: 12px;
   padding-bottom: 30px;
+  margin-top: 0;
 }
 
 .controls {
@@ -557,7 +558,7 @@ body {
   );
 }
 
-.confetti span:nth-child(5n) {
+/* .confetti span:nth-child(5n) {
   left: 10%;
   background: #22c55e;
 }
@@ -580,7 +581,7 @@ body {
 .confetti span:nth-child(5n + 4) {
   left: 90%;
   background: #8b5cf6;
-}
+} */
 
 @keyframes fall-spin {
   0% {
@@ -606,3 +607,4 @@ body {
   box-shadow: 0 0 0 4px rgba(234, 179, 8, 0.7);
   border-radius: 14px;
 }
+
